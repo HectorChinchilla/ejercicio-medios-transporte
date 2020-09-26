@@ -1,0 +1,37 @@
+$dark-theme: true !default;
+$primary-color: #8275b9 !default;
+$accent-color: white !default;
+$color_link: rgba(41, 197, 49, 0.945);
+#uno {
+    color: $color_link;
+}
+
+@mixin crea-caja($color: #26619C, $name: lapislazuli) {
+    .box-#{$name} {
+        @content;
+        box-sizing: border-box;
+        background-color: $color;
+        border: darken($color, 10%);
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        &:hover {
+            border: darken($color, 20%);
+            background-color: darken($color, 5%);
+            cursor: pointer;
+        }
+    }
+}
+
+//LO LLAMAMOS
+@include crea-caja(#F00, rojo);
+.box {
+    background: red;
+    height: 100px;
+}
+
+@media all and (min-width:550px) {
+    .box {
+        background: blue;
+    }
+}

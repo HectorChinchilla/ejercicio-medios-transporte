@@ -1,0 +1,20 @@
+{
+    "name": "resultado1",
+    "version": "1.0.0",
+    "description": "Resultado de Aprendizaje 1",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass -watch scss -o css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HectorChinchilla/RA1.git"
+    },
+    "author": "Leonardo Garcia",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HectorChinchilla/RA1/issues"
+    },
+    "homepage": "https://github.com/HectorChinchilla/RA1#readme"
+}

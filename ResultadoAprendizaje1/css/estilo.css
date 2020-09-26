@@ -1,0 +1,305 @@
+#click div {
+    background-color: rgb(106, 99, 112);
+    color: rgb(43, 172, 165);
+    padding: 1rem;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+#uno {
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+
+/* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
+
+#uno:hover {
+    animation: 2s chicle 1;
+    color: blue;
+}
+
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes chicle {
+    30% {
+        transform: scaleX(1.2) scaleY(0.7);
+    }
+    40% {
+        transform: scaleX(0.7) scaleY(1.2);
+    }
+    60% {
+        transform: scaleX(1.1) scaleY(0.8);
+    }
+}
+
+#click {
+    font-weight: bolder;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: 50px;
+    line-height: 200px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: #455055;
+    color: white;
+    text-align: center;
+}
+
+
+/* Para imagenes terrestres con la clase .cucu */
+
+.cucu {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    margin: 50px;
+}
+
+
+/* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
+
+.cucu:hover {
+    animation: 1s vaiven infinite;
+    animation-timing-function: linear;
+}
+
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes vaiven {
+    /* Combinamos una rotación con una translación (a la misma vez) en cada keyframe*/
+    20% {
+        transform: rotate(10deg) translate(20%);
+    }
+    40% {
+        transform: rotate(-7deg) translate(-15%);
+    }
+    60% {
+        transform: rotate(4deg) translate(10%);
+    }
+    80% {
+        transform: rotate(-1deg) translate(-5%);
+    }
+}
+
+
+/* Para imagenes de transporte maritimo con la clase .cartel */
+
+.cartel {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: 50px;
+    line-height: 100px;
+}
+
+
+/* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
+
+.cartel:hover {
+    animation: 2s cartel infinite;
+    transform-origin: center top;
+    /* <----- Cambiamos el origen de la transformación */
+}
+
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes cartel {
+    /* De a poco el cartel va perdiendo fuera lo que se traduce en menos rotación */
+    10% {
+        transform: rotate(20deg);
+    }
+    30% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+/* Para imagenes  aereas con la clase.vibrador */
+
+.vibrador {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: 50px;
+    line-height: 100px;
+}
+
+
+/* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
+
+.vibrador:hover {
+    animation: 1s vibrador infinite;
+}
+
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes vibrador {
+    /* Vibración de izquierda a derecha (horizontal) */
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10%);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10%);
+    }
+    /* Vibración de arriba a abajo (vertical) */
+    5%,
+    25%,
+    45%,
+    65%,
+    85% {
+        transform: translateY(-10%);
+    }
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        transform: translateY(10%);
+    }
+}
+
+#na a:hover {
+    background-color: rgb(36, 214, 36);
+    color: rgb(20, 20, 19);
+}
+
+#na .icon {
+    display: none;
+}
+
+#no a:hover {
+    background-color: rgb(33, 231, 221);
+    color: #242928;
+    border-radius: 10px;
+}
+
+#no .icon {
+    display: none;
+}
+
+.foote {
+    margin-top: 150px;
+    position: absolute;
+    width: 100%;
+    background-color: #455055;
+    color: white;
+    text-align: center;
+}
+
+
+/* Para la imagen de la opcion de medios de transporte terrestre en el index */
+
+.girar {
+    transition: transform 2s ease;
+}
+
+.girar:hover {
+    transform: rotate(180deg);
+}
+
+
+/* Para la imagen de la opcion de medios de transporte aereos en el index */
+
+.radio {
+    transition: border-radius 2s ease;
+}
+
+.radio:hover {
+    border-radius: 55px;
+}
+
+
+/* Para la imagen de la opcion de medios de transporte maritimos en el index */
+
+.baja:hover {
+    transform: translateY(15px);
+}
+
+#table {
+    width: 50%;
+    border: 1px solid #000;
+}
+
+th,
+td {
+    width: 10%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+}
+
+caption {
+    padding: 0.3em;
+}
+
+#i {
+    width: 50px;
+    height: 75px;
+}
+
+.insta {
+    width: 100px;
+    height: 100px;
+}
+
+.wasa {
+    width: 60px;
+    height: 60px;
+}
+
+.face {
+    width: 65px;
+    height: 65px;
+}
+
+.tw {
+    width: 70px;
+    height: 70px;
+}
+
+.cucu {
+    width: 400px;
+    height: 200px;
+}
+
+.vibrador {
+    width: 400px;
+    height: 200px;
+}
+
+.cartel {
+    width: 400px;
+    height: 200px;
+}

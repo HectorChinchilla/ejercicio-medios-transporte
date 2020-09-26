@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alquiler de transportes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <nav id="na" class="navbar navbar-dark bg-dark">
+        <a class="btn btn-primary" href="index.html">Inicio</a>
+        <a class="btn btn-primary" href="contacto.html">Contacto</a>
+    </nav>
+    <h1 id="uno" class="text-center">Formulario de registro para Alquiler</h1>
+    <br>
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationTooltip01">Nombre Completo</label>
+                <input type="text" class="form-control" placeholder="Ej.Macedonio Vallades" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationTooltip02">Dirección</label>
+                <input placeholder="Ej.Cuidad Esquipulas" type="text" class="form-control" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationTooltipUsername">Correo Electrónico</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input placeholder="Ej.usuario123@gmail.com" type="text" class="form-control" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                        Por favor inglese un correo válido.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationTooltipUsername">Teléfono</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                    </div>
+                    <input type="text" placeholder="Ej.50255487548" class="form-control" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationTooltip03">Tipo de Vehiculo</label>
+                <input placeholder="Ej.Bus Extraurbano" type="text" class="form-control" required>
+                <div class="invalid-tooltip">
+                    Ingresar un tipo de Vehiculo
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationTooltip04">Tipo de Trasporte</label>
+                <select class="custom-select" id="validationTooltip04" required>
+              <option>Terrestre</option>
+              <option>Aereo</option>
+              <option>Maritimo</option>
+            </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationTooltip05">Identificación de Vehiculo</label>
+                <input placeholder="Ej.001" type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip">
+                    Ingrese una Identificación correcta
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationTooltip03">Especifica el tiempo que deseas alquilar el medio de Transporte</label>
+                <input placeholder="Ej. Hora, Dia, Semana o Mes" type="text" class="form-control" id="validationTooltip03" required>
+                <div class="invalid-tooltip">
+                    Ingresar el tiempo de alquiler que desea
+                </div>
+            </div>
+        </div>
+        <a href="mensaje-alquiler.html" class="btn btn-success">Enviar Formulario</a>
+    </form>
+    <hr>
+    <footer>
+        <div class="foote">
+            <p>Alquiler de transportes S.A Created by:HectorChinchilla</p>
+        </div>
+    </footer>
+</body>
+
+</html>
